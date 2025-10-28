@@ -15,7 +15,7 @@
             {% for row in data %}
             <tr>
                 {% for col in columns %}
-                <td>{{ row[col] }}</td>
+                <td>{{ row|get_item:col }}</td>
                 {% endfor %}
             </tr>
             {% endfor %}
