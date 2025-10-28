@@ -19,6 +19,10 @@ lib64/
 venv/
 .venv/
 
+# Large data files
+data/*.csv
+data/*.xlsx
+
 # Django
 *.log
 local_settings.py
