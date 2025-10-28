@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Suicide Detection Dataset</title>
+    <link rel="stylesheet" href="{% static 'suicide_app/css/styles.css' %}">
+    <script src="{% static 'suicide_app/js/animations.js' %}" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Suicide Detection Data Viewer</h1>
+    </header>
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+    <footer>
+        <p>© 2025 Suicide Detection Project</p>
+    </footer>
+</body>
+</html>

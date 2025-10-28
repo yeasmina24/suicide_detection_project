@@ -1,0 +1,25 @@
+{% extends 'suicide_app/base.html' %}
+
+{% block content %}
+<div class="table-container">
+    <input type="text" id="searchInput" placeholder="Search the table..." />
+    <table id="dataTable">
+        <thead>
+            <tr>
+                {% for col in columns %}
+                <th>{{ col }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in data %}
+            <tr>
+                {% for col in columns %}
+                <td>{{ row[col] }}</td>
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
